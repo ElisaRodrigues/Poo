@@ -19,12 +19,10 @@ class Lutador
 
         $this->setCategoria();
     }
-
     public function setPeso(float $novoPeso){
         $this->peso = $novoPeso;
         $this->setCategoria();
     }
-
     public function getPeso(){
         return $this->peso;
     }
