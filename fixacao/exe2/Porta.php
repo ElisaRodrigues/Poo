@@ -18,7 +18,7 @@ class Porta
         $this->cor = $corPintura;
     }
 
-    public function estaAberta(){
+    public function estaAberta():bool{
         return $this->aberta; //estado da porta
     }
 
