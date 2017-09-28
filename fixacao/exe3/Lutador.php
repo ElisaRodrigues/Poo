@@ -5,7 +5,7 @@ class Lutador
     public $nome;
     public $idade;
     public $invergadura;
-    public $peso;
+    private $peso;
     private $categoria;
     private $vitorias;
     private$derrotas;
@@ -18,6 +18,15 @@ class Lutador
         $this->derrotas = $derrotas;
 
         $this->setCategoria();
+    }
+
+    public function setPeso(float $novoPeso){
+        $this->peso = $novoPeso;
+        $this->setCategoria();
+    }
+
+    public function getPeso(){
+        return $this->peso;
     }
 
     public function ganhaLuta(){
