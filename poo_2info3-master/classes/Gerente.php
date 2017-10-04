@@ -20,20 +20,20 @@ class Gerente extends Funcionario
 
 }
 
-require_once "Data.php";
-//Ñ FAZER EM HIPÓTESE NENHUMA ISSO NA VIDA REAL... ABRIR NOVO ARQUIVO
-
-$gerente = new Gerente();
-
-$dataEntrada = new Data();
-$dataEntrada->dia= 02;
-$dataEntrada->mes = 03;
-$dataEntrada->ano = 2014;
-
-$gerente->nome = "Gioconda";
-$gerente->salario = 5000;
-$gerente->setDataEntrada($dataEntrada);
-
-$gerente->recebeAumento(200);
-
-$gerente->mostra();
+//require_once "Data.php";
+////Ñ FAZER EM HIPÓTESE NENHUMA ISSO NA VIDA REAL... ABRIR NOVO ARQUIVO
+//
+//$gerente = new Gerente();
+//
+//$dataEntrada = new Data();
+//$dataEntrada->dia= 02;
+//$dataEntrada->mes = 03;
+//$dataEntrada->ano = 2014;
+//
+//$gerente->nome = "Gioconda";
+//$gerente->salario = 5000;
+//$gerente->setDataEntrada($dataEntrada);
+//
+//$gerente->recebeAumento(200);
+//
+//$gerente->mostra();

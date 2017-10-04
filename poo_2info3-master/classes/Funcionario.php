@@ -15,8 +15,17 @@ class Funcionario
     public $CPF;
     const SALARIO_ANUAL_E_DECIMO = 13;
     const FERIAS = 0.3;
+    private $bonificacao;
 
-//--------X------X--------------------------
+    public function getBonificacao()
+    {
+        return $this->bonificacao;
+    }
+
+    public function setBonificacao($bonificacao)
+    {
+        $this->bonificacao = $bonificacao;
+    }
 
     public function recebeAumento(float $aumento){
         $this->salario += $aumento;
