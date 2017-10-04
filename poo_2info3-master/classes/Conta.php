@@ -15,17 +15,17 @@ class Conta
     public $senha;
 
     function __construct(){
-    self::totalContas++;
+    self::$totalContas++;
     }
 
     function __destruct()
     {
-        self::totalContas--;
+        self::$totalContas--;
     }
 
-    public function getTotalContas(): int
+    public static function getTotalContas(): int
     {
-        return self::totalContas;
+        return self::$totalContas;
     }
 
     public function getDono()

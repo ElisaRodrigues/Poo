@@ -11,32 +11,29 @@ class Funcionario
     public $nome;
     public $departmento;
     public $salario = 0;
-
     private $dataEntrada;
-
     public $CPF;
     const SALARIO_ANUAL_E_DECIMO = 13;
     const FERIAS = 0.3;
 
+//--------X------X--------------------------
+
     public function recebeAumento(float $aumento){
-
         $this->salario += $aumento;
-
     }
 
     public function calculaGanhoAnual():float {
         return ($this->salario * self::SALARIO_ANUAL_E_DECIMO) + $this->salario * self::FERIAS;
     }
 
-    public function mostra(){
+    public function mostra()
+    {
 
         echo "Nome: $this->nome \n";
         echo "Departamento: $this->departmento \n";
         echo "Salario: $this->salario \n";
-        echo "Ganho anual: " .  $this->calculaGanhoAnual(). "\n";
+        echo "Ganho anual: " . $this->calculaGanhoAnual() . "\n";
         echo "Data de entrada: " . $this->dataEntrada->formatada();
-
-
     }
 
     public function getDataEntrada()
@@ -48,7 +45,4 @@ class Funcionario
     {
         $this->dataEntrada = $dataEntrada;
     }
-
-
-
 }

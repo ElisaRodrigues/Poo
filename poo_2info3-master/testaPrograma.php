@@ -16,6 +16,8 @@ $minhaConta->deposita(2000);
 
 
 $outraConta = new Conta();
+
+
 //echo $minhaConta->getDono()->nome;
 
-echo $minhaConta->getTotalContas();
+echo Conta::getTotalContas();
