@@ -25,4 +25,6 @@ $ger->setBonificacao(1000);
 
 $controle = new ControleBonificacao();
 $controle->registra($func);
-$controle->
+$controle->registra($ger);
+
+echo $controle->getTotalBonificacoes();

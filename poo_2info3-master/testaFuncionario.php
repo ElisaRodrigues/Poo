@@ -11,7 +11,7 @@ require_once "classes/Data.php";
 
 $gerente = new Funcionario();
 $gerente->nome = "Alfred Silva";
-$gerente->departmento = "Vendas";
+$gerente->setDepartmento = "Vendas";
 $gerente->salario = 10000;
 //$gerente->dataEntrada = "26/abril/2017"; //transformar em clase
 

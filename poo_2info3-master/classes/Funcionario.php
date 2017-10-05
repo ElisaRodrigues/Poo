@@ -8,14 +8,15 @@
  */
 class Funcionario
 {
-    public $nome;
-    public $departmento;
-    public $salario = 0;
-    private $dataEntrada;
-    public $CPF;
+    protected $nome;
+    protected $departmento;
+    protected $salario = 0;
+    protected $CPF;
+    protected $dataEntrada;
+    protected $bonificacao;
+
     const SALARIO_ANUAL_E_DECIMO = 13;
     const FERIAS = 0.3;
-    private $bonificacao;
 
     public function getBonificacao()
     {
@@ -42,7 +43,7 @@ class Funcionario
         echo "Departamento: $this->departmento \n";
         echo "Salario: $this->salario \n";
         echo "Ganho anual: " . $this->calculaGanhoAnual() . "\n";
-        echo "Data de entrada: " . $this->dataEntrada->formatada();
+        echo "Data de entrada: " . $this->dataEntrada->formatada() ."\n";
     }
 
     public function getDataEntrada()

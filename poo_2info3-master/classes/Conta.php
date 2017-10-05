@@ -1,18 +1,18 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: jefferson
- * Date: 23/08/17
- * Time: 11:13
- */
 class Conta
 {
     static private $totalContas = 0;
-    public $numero;
-    private $saldo = 0;
     private $dono;
-    public $senha;
+    private $senha;
+    protected $numero;
+    protected $saldo = 0;
+    public $taxa;
+
+    public function atualizaSaldo(float $taxa){
+        $percentual = $taxa / 100;
+        $this->saldo += $this->saldo*$percentual;
+    }
 
     function __construct(){
     self::$totalContas++;
